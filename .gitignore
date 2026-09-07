@@ -1,0 +1,13 @@
+# 编译和中间文件
+Binaries/
+Intermediate/
+Saved/
+
+# 编辑器缓存 (体积巨大)
+DerivedDataCache/
+
+# IDE和系统文件
+.vs/
+.vscode/
+*.sln
+.DS_Store
