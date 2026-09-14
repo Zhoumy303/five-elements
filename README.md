@@ -1,54 +1,54 @@
-# 五行 Cycle of Elements
+# Cycle of Elements (五行)
 
-## 📖 游戏简介
-《五行 (Cycle of Elements)》是一款采用 **Unreal Engine 5 (UE5)** 开发的第一人称冒险解谜游戏。
-<img width="2480" height="1218" alt="image" src="https://github.com/user-attachments/assets/f2d48145-e279-4338-90df-7f8448aac59c" />
+## 📖 About the Game
+*Cycle of Elements* is a first-person adventure puzzle game developed using **Unreal Engine 5 (UE5)**.
+<img width="2480" height="1218" alt="Game Cover" src="https://github.com/user-attachments/assets/f2d48145-e279-4338-90df-7f8448aac59c" />
 
-游戏灵感源自中国传统道家哲学。玩家将扮演一位道士，运用金、木、水、火、土**五行元素**的力量，结合**季节更迭**的规律，净化被污染的环境，恢复世界的自然平衡。
+Inspired by traditional Chinese Daoist philosophy, players take on the role of a Taoist who harnesses the power of the **Five Elements** (Metal, Wood, Water, Fire, Earth) combined with the rhythm of **seasonal changes** to purify polluted environments and restore balance to the world.
 
-## ✨ 核心特色 (Key Features)
-*   **卡通传统中国风 (Cartoon Traditional Chinese Art):** 融合低多边形风格、传统山水、符箓与自然元素，营造出沉浸式的东方奇幻世界。
-*   **道家和谐之旅 (Harmony of Daoist Journey):** 将五行生克与季节变化相结合，让玩家在解谜与探索中感受道法自然的和谐理念。
-*   **基于元素的谜题设计 (Element-Based Puzzle Design):** 利用五行相生相克（Sheng & Ke）的机制解开谜题，开辟新道路，拯救不断恶化的世界。
-<img width="2480" height="1218" alt="image" src="https://github.com/user-attachments/assets/ecba107f-ed36-4567-8919-dc592de49e19" />
-<img width="2480" height="1218" alt="image" src="https://github.com/user-attachments/assets/0f3892e1-059e-4d96-a858-9cc4c06d66fd" />
+## ✨ Key Features
+*   **Cartoon Traditional Chinese Art:** Blends low-poly aesthetics, traditional landscapes, talismans, and natural elements to immerse players in an Eastern-inspired fantasy world.
+*   **Harmony of Daoist Journey:** Combines the Five Elements' generating and controlling cycles with seasonal changes, allowing players to experience Daoist harmony while exploring and solving puzzles.
+*   **Element-Based Puzzle Design:** Utilizes the generating (Sheng) and controlling (Ke) mechanics of the Five Elements to solve puzzles, open new paths, and restore balance to a deteriorating world.
+<img width="2480" height="1218" alt="Key Features 1" src="https://github.com/user-attachments/assets/ecba107f-ed36-4567-8919-dc592de49e19" />
+<img width="2480" height="1218" alt="Key Features 2" src="https://github.com/user-attachments/assets/0f3892e1-059e-4d96-a858-9cc4c06d66fd" />
 
-## 🎮 核心玩法与机制 (Game Mechanics)
+## 🎮 Game Mechanics
 
-### 1. 五行生克系统
-*   **相生 (Generating Cycle - Sheng):** 木生火、火生土、土生金、金生水、水生木。
-*   **相克 (Controlling Cycle - Ke):** 水克火、火克金、金克木、木克土、土克水。
+### 1. The Five Elements System
+*   **Generating Cycle (Sheng):** Wood generates Fire, Fire generates Earth, Earth generates Metal, Metal generates Water, Water generates Wood.
+*   **Controlling Cycle (Ke):** Water controls Fire, Fire controls Metal, Metal controls Wood, Wood controls Earth, Earth controls Water.
 
-### 2. 基础交互机制
-*   **元素收集 (Element Collection) & 吸收 (Absorb Element):** 在地图特定地点获取并吸收元素能量。
-*   **元素切换 (Element Switching):** 在 UI 中切换当前使用的元素能力。
-*   **元素合成 (Element Crafting):** 结合不同元素或季节环境进行道具与技能的合成。
-*   **季节变换 (Season Change):** 利用季节规律改变环境状态，辅助解谜。
-*   **探索能力:** 包含**攀爬 (Climbing)** 与**御剑飞行 (Flying)**，极大地丰富了第一人称视角下的探索体验。
-<img width="2480" height="1218" alt="image" src="https://github.com/user-attachments/assets/2a16cab5-6f6b-4653-8d8f-d20724a9d429" />
-<img width="2480" height="1218" alt="image" src="https://github.com/user-attachments/assets/6563f4cb-067e-485f-87e9-0415f34d33cd" />
+### 2. Core Interactions
+*   **Element Collection & Absorb Element:** Collect and absorb elemental energy at specific locations on the map.
+*   **Element Switching:** Switch between currently equipped elemental abilities via the UI.
+*   **Element Crafting:** Combine different elements or seasonal environments to craft items and skills.
+*   **Season Change:** Manipulate seasonal cycles to alter environmental states and assist in puzzle-solving.
+*   **Exploration Abilities:** Includes **Climbing** and **Flying (Sword Flight)**, greatly enriching the first-person exploration experience.
+<img width="2480" height="1218" alt="Mechanics 1" src="https://github.com/user-attachments/assets/2a16cab5-6f6b-4653-8d8f-d20724a9d429" />
+<img width="2480" height="1218" alt="Mechanics 2" src="https://github.com/user-attachments/assets/6563f4cb-067e-485f-87e9-0415f34d33cd" />
 
-## 🛠️ 开发迭代历程 (Iteration)
+## 🛠️ Development Iteration
 
-本项目在开发过程中经历了多次技术迭代：
-1.  **早期关卡设计 (Early Level Design):** 经历了从白模（Blockout）搭建，到地形雕刻、植被与场景美术铺设的完整过程。
-2.  **元素收集实现 (Element Collection):** 最初尝试直接匹配 Actor 类型，但频繁报错。后改用 **Tags (标签)** 进行识别，逻辑更可靠、准确。
-3.  **元素切换实现 (Element Switching):** 最初使用 `Released` 输入事件退出 UI 导致输入冲突。后利用 **FlipFlop 节点** 切换状态，使 UI 和游戏控制能够稳定切换，解决了输入失效的问题。
-<img width="2480" height="1218" alt="image" src="https://github.com/user-attachments/assets/be8b5aa2-3a36-434a-bed2-24dcc59e0a91" />
-<img width="2480" height="1218" alt="image" src="https://github.com/user-attachments/assets/7cacb0ea-a37a-4207-b8d4-fece5d29b91b" />
-<img width="2480" height="1218" alt="image" src="https://github.com/user-attachments/assets/11645683-4bc4-44fb-994a-effe7db2d960" />
+The project went through several technical iterations during development:
+1.  **Early Level Design:** Progressed from white-box (Blockout) construction to terrain sculpting, vegetation placement, and final scene art pass.
+2.  **Element Collection Implementation:** Initially attempted direct Actor type matching, which frequently caused errors. Switched to using **Tags** for identification, resulting in more reliable and accurate logic.
+3.  **Element Switching Implementation:** Initially used the `Released` input event to exit the UI, which conflicted with other inputs. Resolved by using a **FlipFlop node** to toggle states, allowing the UI and gameplay controls to switch reliably.
+<img width="2480" height="1218" alt="Iteration 1" src="https://github.com/user-attachments/assets/be8b5aa2-3a36-434a-bed2-24dcc59e0a91" />
+<img width="2480" height="1218" alt="Iteration 2" src="https://github.com/user-attachments/assets/7cacb0ea-a37a-4207-b8d4-fece5d29b91b" />
+<img width="2480" height="1218" alt="Iteration 3" src="https://github.com/user-attachments/assets/11645683-4bc4-44fb-994a-effe7db2d960" />
 
+## 💡 Inspiration
 
-## 💡 灵感来源 (Inspiration)
+*   **Gameplay:** Draws inspiration from excellent puzzle games like *COCOON* (Geometric Interactive, 2023).
+*   **Cultural Core:** Deeply explores the philosophical definitions and totemic symbolism of the traditional Five Elements (Metal, Wood, Water, Fire, Earth).
+*   **Art Reference:** Referenced various stylized assets from the UE Marketplace (such as Stylized Japanese Temple, Wooden Sword, Kyoto Fushimi Inari-taisha temple asset packs) and stylized materials.
 
-*   **游戏玩法:** 借鉴了《COCOON》(Geometric Interactive, 2023) 等优秀解谜游戏的关卡设计理念。
-*   **文化内核:** 深入挖掘了传统五行（金木水火土）的哲学定义与图腾象征。
-*   **美术参考:** 参考了 UE 商城中的各类风格化素材（如 Stylized Japanese Temple, Wooden Sword, Kyoto Fushimi Inari-taisha temple 等资源包）及风格化材质。
+## 🚀 Getting Started
 
-
-### 环境要求
-*   Unreal Engine 5.x (推荐 5.3 或更高版本)
+### Prerequisites
+*   Unreal Engine 5.x (5.3 or higher recommended)
 *   Windows 11
 
-## 🚀 如何运行 (Getting Started)
-//todo
+### Installation & Running
+*(To be added)*
